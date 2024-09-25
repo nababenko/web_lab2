@@ -1,3 +1,16 @@
+body{
+    background-color: #f8f8f8;
+    margin: 0;
+}
+
+
+
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:normal;
+  font-style: normal;
+}
 
 .about_us, .shop_in_store, .footer_info, .header_menu{
     display: flex;
@@ -5,3 +18,116 @@
 table, th, td{
     border: 1px solid black;
 }
+
+header{
+    background-color: transparent;
+}
+#navbar {
+    background-color: transparent;
+    position: fixed; 
+    top: -1080px; 
+    width: 100%; 
+    transition: top 0.3s; 
+  }
+
+/*  part 1 */
+.welcome{
+    background-image: url(resources/first_background.jpg);
+    height: 1060px;
+}
+.welcome a{
+    text-decoration: none;
+    color: #f8f8f8;
+    font-size: 780px;
+    font-family: "Xanh Mono", monospace;
+}
+
+/*  part 2 */
+.about_us{
+    padding: 100px;
+}
+.about_info{
+    text-align: center;
+    margin-left: 100px;
+}
+.head{
+    margin-top: 20%;
+    font-size: 86px;
+    font-weight: bold;
+    color: rgba(100, 96, 86, 1);
+}
+.text{
+    font-size: 24px;
+    width: 754px;
+    color: rgba(103, 97, 88, 1);
+}
+
+.about_us img{
+    border-radius: 62px;
+    margin-left: 300px;
+}
+/*  part 3 */
+.products{
+    background-image: url(resources/background.png);
+    height: 1080px;
+    font-size: 66px;
+    padding-top: 30px;
+}
+.products ul{list-style-type: none;}
+.products a{
+    text-decoration: none;
+    letter-spacing: 2rem;
+    color: rgba(100, 96, 86, 1);
+    display: inline-block; 
+    height: 50px; 
+    line-height: 50px; 
+    transition: all 0.3s ease; 
+}
+.products a:hover{
+    font-family: "Viaoda Libre", serif;  
+    color: rgba(100, 96, 86, 1);
+    text-shadow: 3px 2px 4px rgba(141, 141, 141, 0.93);
+    letter-spacing: 3rem;
+    
+}
+ .products li{
+    padding: 16px;
+ }
+ #l1{padding-left: 900px;}
+ #l2{padding-left: 800px;}
+ #l3{padding-left: 700px;}
+ #l4{padding-left: 600px;}
+ #l5{padding-left: 400px;}
+ #l6{padding-left: 500px;}
+
+/*  part 4 */
+/*  part 5 */
+.shop_in_store{
+    padding: 100px;
+    
+}
+.shop_info{
+    text-align: center;
+    margin-left: 200px;
+}
+.shop_in_store img{
+    border-radius: 62px;
+    margin-left: 100px;
+}
+.shop_in_store a{
+    text-decoration: none;
+    font-size: 24px;
+    border: 1px solid rgba(103, 97, 88, 1);
+    padding: 10px 30px;
+    border-radius: 60px;
+    color: rgba(103, 97, 88, 1);
+}
+.shop_in_store a:hover{
+    background-color: rgba(103, 97, 88, 1);
+    color: #f8f8f8;
+}
+.shop_in_store p{
+    margin-bottom: 50px;
+}
+
+/*  bottom 1 */
