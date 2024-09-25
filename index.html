@@ -17,15 +17,17 @@
     <header>
         <nav>
             <div class="header_menu">
-                <button class="menu_button">MENU</button>
-                <a href="???">té</a>  
-                    <div class="input_area">
-                        <form>
-                            <input type="text" placeholder="What are you looking for?">
-                            <button type="submit"><i class="fa-solid fa-arrow-left-long"></i></button>
-                        </form>
-                    </div>          
-                    <a class="products_link" href="???">PRODUCTS</a>
+                <div class="dropdown">
+                    <button class="menu_button">MENU</button>
+                    <div class="dropdown-content">
+                        <a href="???">ABOUT US</a>
+                        <a href="???">CATEGORIES</a>
+                        <a href="???">MATERIALS</a>
+                        <a href="???">SHOP IN STORE</a>
+                        <a href="???">CONTACTS</a>
+                    </div>
+                </div>                     
+                <a class="products_link" href="???">PRODUCTS</a>
                 <button class="bucket_button"><i class="fa-solid fa-basket-shopping"></i></button>
             </div>
         </nav>
@@ -33,9 +35,26 @@
 
 
 <main>
-    <section class="welcome">       
-        <a href="???">té</a>
+    <section class="welcome"> 
+         <a href="???">té</a>
     </section>
+
+    <div class="back">
+        <nav></nav>
+            <div class="header_menu">
+                <button class="menu_button">MENU</button>
+                    
+                    <div class="input_area">
+                        <form>
+                            <input type="text" placeholder="What are you looking for?">
+                            <button type="submit"><i class="fa-solid fa-arrow-left-long"></i></button>
+                        </form>
+                    </div>          
+                    <a href="???">PRODUCTS</a>
+                <button class="bucket_button"><i class="fa-solid fa-basket-shopping"></i></button>
+            </div>
+        </nav>
+    </div>
 
     <section class="about_us">
         <div class="about_info">
@@ -43,7 +62,7 @@
             <p class="text">We specialize in offering high-quality, stylish furniture designed to elevate any living space. Our curated selection combines comfort, functionality, and modern aesthetics to meet the diverse needs of our customers. With a commitment to exceptional craftsmanship and customer service, we help you create a home that reflects your unique style.</p>
         </div>
         <img src="resources/2.jpg" alt="item" height="732">
-    </section><hr>
+    </section>
 
     <section class="products">
         <ul >
@@ -54,7 +73,7 @@
             <li><a href="???" id="l5">ARMCHAIRS</a></li>
             <li><a href="???" id="l6">SOFAS</a></li>
         </ul>    
-    </section><hr>
+    </section>
 
     <section class="materials">
         <div class="materials_info">
@@ -63,14 +82,14 @@
         </div>
         <div class="materials_photos_container">
             <span>
-                <img src="resources/8.png" alt="item1" height="224">
-                <img src="resources/5.png" alt="item2" height="224">
-                <img src="resources/15.png" alt="item3" height="224">
-                <img src="resources/16.png" alt="item4" height="224">
-                <img src="resources/14.png" alt="item5" height="224">
+                <img src="resources/8.png" alt="item1" >
+                <img src="resources/5.png" alt="item2" >
+                <img src="resources/15.png" alt="item3" >
+                <img src="resources/16.png" alt="item4" >
+                <img src="resources/14.png" alt="item5">
             </span>
         </div>
-    </section><hr>
+    </section>
 
 
     <section class="shop_in_store">
@@ -80,7 +99,7 @@
             <p class="text">Shop in-store at our convenient location in Chicago and explore our wide range of quality furniture pieces firsthand.</p>
             <a href="???" class="shop_info_button">Find a store</a>
         </div>
-    </section><hr>
+    </section>
 
     <section class="additional">
         <table>
@@ -101,13 +120,13 @@
                 <td>Проет ще буде доопрацьовуватись. Заплановано точно ще 4 сторінки. </td>
             </tr>
         </table>
-    </section><hr>
+    </section>
 
 </main>
 
 
 <footer>
-<p>For any inquiries or assistance, feel free to reach out to us using the contact information below.</p>
+<p class="footer_text">For any inquiries or assistance, feel free to reach out to us using the contact information below</p>
     <div class="footer_info">
         <div class="contacts">
             <p class="number">+1 000 000 00 00</p>
@@ -115,14 +134,23 @@
             <p class="address">Mar Vista 12928 Venice Blvd. Chicago, CA 9066</p>
         </div>
         <div class="links">
-            <i class="fa-brands fa-instagram"></i><a href="???">INSTAGRAM</a><br>
-            <i class="fa-brands fa-pinterest"></i><a href="???">PINTEREST</a><br>
-            <i class="fa-brands fa-facebook"></i><a href="???">FACEBOOK</a>
+            <i class="fa-brands fa-instagram"></i><a id="inst" href="???">INSTAGRAM</a><br>
+            <i class="fa-brands fa-pinterest"></i><a id="pint" href="???">PINTEREST</a><br>
+            <i class="fa-brands fa-facebook"></i><a id="facebook" href="???">FACEBOOK</a>
         </div>
     </div>
     <p class="rights">© 2024 Babenko company. All rights reserved.</p>
 </footer>
 
-
+<script>
+    window.addEventListener('scroll', function() {
+        const backElement = document.querySelector('.back');
+        if (window.scrollY > 1020) { 
+            backElement.style.display = 'block'; 
+        } else {
+            backElement.style.display = 'none'; 
+        }
+    });
+</script>
 </body>
 </html>

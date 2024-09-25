@@ -19,31 +19,146 @@ table, th, td{
     border: 1px solid black;
 }
 
+
+
+
+/* HEADER */
+
 header{
-    background-color: transparent;
-}
-#navbar {
-    background-color: transparent;
+    padding-top: 20px;
     position: fixed; 
-    top: -1080px; 
-    width: 100%; 
-    transition: top 0.3s; 
+}
+
+header button{    
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+}
+.menu_button{
+    padding-top: 5px;
+    margin-left: 65px;
+    margin-right: 760px;
+    cursor: pointer;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
   }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    margin-left: 50px;
+    background-color: transparent ;
+    min-width: 160px;
+    
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+     background-color: #676158;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  
+
+.products_link{
+    margin-left: 722px;
+}
+header a{
+    text-decoration: none;
+    color: white;    
+    margin: 5px 20px 0 20px;
+    font-size: 24px;
+}
+header i{
+    color: #f8f8f8;
+    font-size: 24px;
+}
+
+
+
+
+
+
 
 /*  part 1 */
 .welcome{
     background-image: url(resources/first_background.jpg);
-    height: 1060px;
+    height: 1020px;
+    text-align: center;
 }
-.welcome a{
-    text-decoration: none;
+.welcome a{    
     color: #f8f8f8;
-    font-size: 780px;
+    text-decoration: none;
+    font-size: 600px;    
     font-family: "Xanh Mono", monospace;
 }
+.back{
+    display: none;    
+    width: 100%;
+    padding-top: 20px;
+    position: fixed;
+    background-color: #f8f8f8;
+    height: 50px;
+    top: 0;
+    overflow: hidden; 
+}
+.back a{
+    text-decoration: none;
+    color: rgba(103, 97, 88, 1);    
+    margin: 5px 20px 0 20px;
+    font-size: 24px;
+}
+.back i{
+    color: rgba(103, 97, 88, 1);
+    font-size: 24px;
+}
+.back input{
+    background-color: transparent; 
+    border: none;
+    width: 620px;
+    font-size: 16px;
+    margin-left: 10px;
+}
+.back button{    
+    background-color: transparent;
+    border: none;
+    color: rgba(103, 97, 88, 1);
+    font-size: 24px;
+}
+
+input::placeholder {
+    color: rgba(103, 97, 88, 1);
+}
+
+.input_area{
+    border: 1px solid rgba(103, 97, 88, 1);
+    border-radius: 44px;
+    width: 700px;
+    text-align: right;
+}
+
+
+
+
+
 
 /*  part 2 */
 .about_us{
+    margin-top: 100px;
     padding: 100px;
 }
 .about_info{
@@ -100,7 +215,33 @@ header{
  #l5{padding-left: 400px;}
  #l6{padding-left: 500px;}
 
+
+
+
+
+
 /*  part 4 */
+.materials{
+    margin-left: 50px;
+    margin-bottom: 100px;
+}
+.materials_head{
+    font-size: 86px;
+    color: #C4B399;
+}
+.materials_text{
+    font-size: 24px;
+    margin-bottom: 200px;
+}
+.materials_photos_container img{
+    height: 300px;
+}
+
+
+
+
+
+
 /*  part 5 */
 .shop_in_store{
     padding: 100px;
@@ -130,4 +271,41 @@ header{
     margin-bottom: 50px;
 }
 
+
+
+
+
 /*  bottom 1 */
+.footer_text{
+    margin-left: 5px;
+    font-size: 32px;
+    letter-spacing: 6px;
+}
+footer a{
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 32px;
+    color: black;
+}
+#inst:hover{
+    color: #D23C7D;
+}
+#facebook:hover{
+    color: #3B579D;
+}
+#pint:hover{
+    color: red;
+}
+footer i{
+    font-size: 32px;
+}
+.contacts{
+    margin-left: 200px;
+    margin-right: 800px;
+}
+.footer_info{
+    margin-bottom: 60px;
+}
+.rights{
+    font-size: 10px;
+}
