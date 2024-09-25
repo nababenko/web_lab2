@@ -1,0 +1,7 @@
+
+.about_us, .shop_in_store, .footer_info, .header_menu{
+    display: flex;
+}
+table, th, td{
+    border: 1px solid black;
+}
