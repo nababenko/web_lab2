@@ -1,23 +1,30 @@
-body{
-    background-color: #f8f8f8;
-    margin: 0;
-}
-
-
 
 body {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight:normal;
   font-style: normal;
+
+    background-color: #f8f8f8;
+    margin: 0;
 }
 
 .about_us, .shop_in_store, .footer_info, .header_menu{
     display: flex;
 }
-table, th, td{
-    border: 1px solid black;
-}
+ /* aditional */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 16px;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 18px;
+  }
+  
+  tr:nth-child(even) {background-color: #f2f2f2;}
 
 
 
@@ -29,7 +36,7 @@ header{
     position: fixed; 
 }
 
-header button{    
+.header_menu button{    
     background-color: transparent;
     border: none;
     color: white;
@@ -74,23 +81,36 @@ header button{
   
   
 
-.products_link{
+.header_menu .products_link{
     margin-left: 722px;
 }
-header a{
+.header_menu a{
     text-decoration: none;
     color: white;    
     margin: 5px 20px 0 20px;
     font-size: 24px;
 }
-header i{
-    color: #f8f8f8;
+
+
+/* header done */
+.header_menu_done button{    
+    background-color: transparent;
+    border: none;
+    color: rgba(103, 97, 88, 1);
     font-size: 24px;
 }
-
-
-
-
+.header_menu_done .products_link{
+    margin-left: 722px;
+}
+.header_menu_done a{
+    text-decoration: none;
+    color: rgba(103, 97, 88, 1);    
+    margin: 5px 20px 0 20px;
+    font-size: 24px;
+}
+.header_menu_done .dropdown-content a:hover{
+    color: white;
+}
 
 
 
@@ -106,50 +126,7 @@ header i{
     font-size: 600px;    
     font-family: "Xanh Mono", monospace;
 }
-.back{
-    display: none;    
-    width: 100%;
-    padding-top: 20px;
-    position: fixed;
-    background-color: #f8f8f8;
-    height: 50px;
-    top: 0;
-    overflow: hidden; 
-}
-.back a{
-    text-decoration: none;
-    color: rgba(103, 97, 88, 1);    
-    margin: 5px 20px 0 20px;
-    font-size: 24px;
-}
-.back i{
-    color: rgba(103, 97, 88, 1);
-    font-size: 24px;
-}
-.back input{
-    background-color: transparent; 
-    border: none;
-    width: 620px;
-    font-size: 16px;
-    margin-left: 10px;
-}
-.back button{    
-    background-color: transparent;
-    border: none;
-    color: rgba(103, 97, 88, 1);
-    font-size: 24px;
-}
 
-input::placeholder {
-    color: rgba(103, 97, 88, 1);
-}
-
-.input_area{
-    border: 1px solid rgba(103, 97, 88, 1);
-    border-radius: 44px;
-    width: 700px;
-    text-align: right;
-}
 
 
 
@@ -181,7 +158,9 @@ input::placeholder {
     border-radius: 62px;
     margin-left: 300px;
 }
-/*  part 3 */
+
+
+/*  part 3  */
 .products{
     background-image: url(resources/background.png);
     height: 1080px;
@@ -275,7 +254,7 @@ input::placeholder {
 
 
 
-/*  bottom 1 */
+/*  bottom */
 .footer_text{
     margin-left: 5px;
     font-size: 32px;
@@ -308,4 +287,9 @@ footer i{
 }
 .rights{
     font-size: 10px;
+} 
+
+.footer_info{
+    margin-top: 60px;
 }
+
